@@ -381,11 +381,11 @@
 				<br>
 				
 				<i><b>Your Details:</b></i>
-				<div style="margin: 0 0 0 50px; text-align: left;">
+				<div style="margin: 0 0 0 20px; text-align: left;">
 				<br>
-				*First Name: <input type="text" required><br>
-				Last Name: <input type="text"><br>
-				*Phone: <input type="text" required><br>
+				<label for="first-name">*First Name:</label><input type="text" required><br>
+				<label for="last-name">Last Name: </label><input type="text"><br>
+				<label for="phone-number">*Phone: </label><input type="text" required><br>
 				<br>
 				</div>
 				
@@ -393,15 +393,24 @@
 				<br><br>
 				<div class="left-aligned-form-section">
 				<ul>
-					<li>🌸Funky Fries					<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
-					<li>🌸Spring Rolls					<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
-					<li>🌸Chicken Drumsticks			<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
-					<li>🌸Combination Hot Pot			<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
-					<li>🌸Shoyu Chasiu Ramen			<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
-					<li>🌸Chicken Noodle Soup			<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
-					<li>🌸Strawberry Ice-cream			<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
-					<li>🌸Dark Chocolate Glazed Donut	<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
-					<li>🌸Japanese Chocolate Pudding	<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li><label for="quantity-fries">🌸Funky Fries</label>					
+					<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li><label for="quantity-sping-rolls">🌸Spring Rolls</label>			
+					<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li><label for="quantity-chicken-drumsticks">🌸Chicken Drumstic</label>		
+					<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li><label for="quantity-hotpot">🌸Combination Hot Pot</label>				
+					<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li><label for="quantity-combo-ramen">🌸Shoyu Chasiu Ramen</label>			
+					<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li><label for="quantity-noodle-soup">🌸Chicken Noodle Soup</label>			
+					<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li><label for="quantity-strawberry-icecream">🌸Strawberry Ice-cream</label>			
+					<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li><label for="quantity-donut">🌸Dark Chocolate Glazed Donut</label>
+					<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li><label for="quantity-pudding">🌸Japanese Chocolate Pudding</label>
+					<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
 				</ul>
 				</div>
 				<br> 
@@ -409,9 +418,9 @@
 				<div class="left-aligned-form-section">
 					<br>
 					<ul>
-					<input type="checkbox" name="add-on-checkbox"><li>Napkins ($1)</li><br>
-					<input type="checkbox" name="add-on-checkbox"><li>Cutlery ($1)</li><br>
-					<input type="checkbox" name="add-on-checkbox"><li>Limited-edition Tote bag ($5) </li><br>
+					<label for="add-on-napkins"><input type="checkbox" name="add-on-checkbox"></label><li>Napkins ($1)</li><br>
+					<label for="add-on-cutlery"><input type="checkbox" name="add-on-checkbox"></label><li>Cutlery ($1)</li><br>
+					<label for="add-on-tote"><input type="checkbox" name="add-on-checkbox"></label><li>Limited-edition Tote bag ($5) </li><br>
 					<br>
 				</ul>
 				</div>
@@ -422,7 +431,7 @@
 				<textarea id="comments"  placeholder="Enter your special requests here..."></textarea>
 				</div>
 				
-				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><input type="Submit"></a>
+				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><input type="Submit" value="Go to checkout"></a>
 			</form>
 			</article>
 			</div>
@@ -434,6 +443,8 @@
 	    <div class="containerdivNewLine">
 			<footer class="site-footer">  
 				<p><b>Copyright © 2025 BTZ Cafe</b></p>
+				<p>Made with love by @btz</p>
+				<br>
 				<ul>
 					<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">About</a></li>
 				</ul>
