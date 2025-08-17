@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    header {
+		display: flex; 
+        flex-direction: row;
+        justify-content: flex-start; 
+        background-color: transparent;
+        padding: 10px 0px 10px 5px;
+		font-family: "Monaco", monospace;
+	}
+	
+	nav{
+        width: 100%;
+		display: flex;
+        flex-direction: row;
+        align-items: center; 
+		background-color: #FBCE46; /* egg*/
+		border-radius: 5px; /* Rounded corners */
+		box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+	
+	body {
+		background-color: #85DFFF /* blue */;
+		min-height: 100%; /* Ensure html and body take full height */
+		width: 1200px;
+	}
+	* {
+		padding: 0;
+		margin: 0px 10px 5px 10px;
+		font-family: "Monaco", monospace;
+		
+	}
+	
+	h2 {
+		text-align: center;
+	}
+	
+	h3 {
+		text-align: center;
+	}
+	
+	.site-footer {
+		background-color: transparent;
+		padding: 20px;
+		margin: 0 0 -10px -50px;
+		text-align: center;
+		align-items: center;
+		width: 100%;
+		border-radius: 5px;
+    }
+		
+	#header-img {
+	    height: 90px;
+		width: auto;
+		padding: 10px 20px 10px 10px;
+	}
+	
+	#Cafe-name {
+		padding: 0px 20px 0px 0px;
+		align: left;
+	}
+	
+	article {
+		clear: both; 
+		float: center; 
+		display: block; 
+		position: relative;
+	}
+	
+	#menu-item {
+		display: inline;
+		padding: 0px 0px 0px 0px;
+	}
+	
+    li {
+      display: inline;
+	  padding: 10px;
+    }
+	
+	a {
+		text-decoration: none; 
+		color: inherit; 
+		
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
+	
+	
+	figcaption {
+		height: 30px;
+		margin-bottom: 20px;
+	}
+	
+	.container {
+		max-width: 1200px;
+	}
+	
+	.containerdivNewLine { 
+		clear: both; 
+		float: center; 
+		align-items: center;
+		justify-content: center;
+		display: block; 
+		position: relative; 
+		width: 100%;
+	}
+		
+	.image-with-text {
+		width: 29%;
+		float: left;
+		height: 320px;
+		text-align: center;
+		border: solid 5px transparent;
+		border-color: #EB9749; /* Shiba inu orange-brown */
+		border-radius: 10px;
+		margin: 0% 1% 0.5% 1%;
+		margin-bottom: 50px;
+		background: white;
+	}
+	
+	.image-with-text img {
+		width: auto;
+		height: 150px;
+		margin: 10px 0 0 0;
+	}
+	
+	.order-form {
+		width: 60%;
+		height: auto;
+		margin-left: 17%;
+		background: #fcd986; /* egg highlight */
+		align-items: center;
+		text-align: left;
+		border-radius: 10px;
+		border: 0px solid #EB9749; /* Regular border */
+		box-shadow: 0 0 15px #3498db; /* Glowing effect */
+		transition: box-shadow 0.3s ease-in-out; /* Smooth transition on hover */
+		padding: 20px;
+		margin-bottom: 50px;
+		float: left;
+	}
+	
+	.left-aligned-form-section {
+		text-align: left;
+	}
+	
+	input[type="text"] {
+        width: 150px;
+        padding: 4px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+	
+	input[type="number"][name="quantity"] {
+        width: 50px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+	
+	textarea {
+		width: 100%;
+		height: 100px;
+		padding: 12px 20px;
+		box-sizing: border-box;
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		background-color: #f8f8f8;
+		font-size: 16px;
+		resize: none;
+	}
+	
+	/* Targeting an input type="submit" */
+	input[type="submit"] {
+		background-color: #4CAF50; /* Green background */
+		color: white; /* White text */
+		padding: 10px 20px; /* Padding inside the button */
+		border: none; /* Remove default border */
+		border-radius: 5px; /* Rounded corners */
+		cursor: pointer; /* Change cursor on hover */
+		font-size: 16px; /* Text size */
+		display: block;
+		margin: 0 auto;
+	}
+	
+	input[type="submit"]:hover {
+		background-color: #45a049; /* Darker green on hover */
+	}
+
+		
+	/* Center the whole webpage contents */
+	html {
+    display: table;
+    margin: auto;
+	}
+	
+	/* Override display of images when screen decreases in size */
+	@media screen and (max-width:1000px) {
+		li {
+		  display: inline-block;
+		  padding: 10px;
+		}
+		
+		.containerdivNewLine { 
+			clear: both; 
+			float: left; 
+			display: 
+			block; 
+			position: relative; 
+		}
+	
+		.container {
+			display: flex;
+			flex-direction: row;
+			height: 420px;
+			margin: 0 0 -30px 0;
+			min-width: 600px;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.image-with-text {
+		height: 350px;
+		}
+		
+		.image-with-text img {
+		width: auto;
+		height: 100px;
+		border-radius: 5px;
+		}
+		
+		body {
+			width: 700px;
+		}
+		
+		figcaption {
+			height:40px;
+		}
+	}
+	
+    </style>
+  <head>
+    <title>BTZ Cafe Menu</title>
+  </head>
+  <body>
+    <header class="header">
+	<nav class="navbar">
+	  <img 
+	    id="header-img"
+		src="https://play-lh.googleusercontent.com/Te9ZLEV1qg4ycPExNJoOpOyLMs-dCVAgDF00Fs-iCuLzSwwYvFc4qI3ByNfAyctYPw=s256-rw"
+		alt="Cafe Logo"
+	  />
+	  <h1 id="Cafe-name">BTZ Cafe</h1>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order-form">Order Form</a></li>
+      </ul>
+	  
+      </nav>
+  </header>
+  
+  <main class="content-wrap">
+      <section>
+        <h2 id="menu">Menu</h2>
+        <article>
+        <h3>🌸Entrees🌸</h3>
+		
+		<div class="container">
+			<div class="image-with-text">
+			<img
+			  src="https://png.pngtree.com/png-clipart/20240324/ourmid/pngtree-french-fries-pixel-art-png-image_12209156.png"
+			  alt="Fries"
+			/>
+			<figcaption>Funky fries</figcaption>
+			<p><i>Fries just like you like them. Includes tomato sauce. ($5)</i><p>
+			</div>
+		
+			<div class="image-with-text">
+			<img
+			  src="https://sunhaven.wiki.gg/images/d/da/Spring_Roll.png?40cf69"
+			  alt="spring rolls"
+			/>
+			<figcaption>Spring Rolls (V)</figcaption>
+			<p><i>2 pieces of our home-made vegetarian spring rolls. ($4)</i><p>
+			</div>
+		
+			<div class="image-with-text">
+			<img 
+			  src="https://img.freepik.com/premium-vector/fried-chicken-pixel-art-vector_553915-56.jpg"
+			  alt="chicken drumstick" 
+			/>
+			<figcaption>Chicken Drumsticks</figcaption>
+			<p><i>5 pieces of our crispy chicken drumsticks with sauces of your choice. ($10)</i><p>
+			</div>
+		</div>
+        </article>
+		
+		<article>
+        <h3>🌸Mains🌸</h3>
+		
+		<div class="container">
+			<div class="image-with-text">
+			<img
+			  src="https://thumb.ac-illust.com/3e/3e3e109a0b0837657a45576b336864f8_t.jpeg"
+			  alt="Hot pot"
+			/>
+			<figcaption>Combination Hot Pot</figcaption>
+			<p><i>Delicious seafood, beef and pork in a half-half soup with choices of Tomato Soup, Mushroom Soup and Tomyum Soup. ($20)</i><p>
+			</div>
+		
+			<div class="image-with-text">
+			<img
+			  src="https://thumb.ac-illust.com/d9/d9c58808e3dbc5db7fed3e972fd49ddb_t.jpeg"
+			  alt="ramen"
+			/>
+			<figcaption>Shoyu Chasiu Ramen</figcaption>
+			<p><i>A rich broth that Naruto would love, two slices of 3-hour slow-cooked Chasiu pork, bok choi and topped with an egg. ($15)</i><p>
+			</div>
+		
+			<div class="image-with-text">
+			<img 
+			  src="https://thumb.ac-illust.com/f9/f93cf8d623aed32c66b84f84f3557d40_t.jpeg"
+			  alt="Noodles" 
+			/>
+			<figcaption>Chicken Noodle Soup</figcaption>
+			<p><i>A clear chicken broth, seared chicken, toasted sesame seeds and egg noodles to warm your heart. ($15)</i><p>
+			</div>
+		</div>
+        </article>
+		
+		<article>
+        <h3>🌸Desserts🌸</h3>
+		
+		<div class="container">
+			<div class="image-with-text">
+			<img
+			  src="https://static.vecteezy.com/system/resources/previews/012/013/906/non_2x/ice-cream-pixel-art-free-vector.jpg"
+			  alt="ice cream"
+			/>
+			<figcaption>Strawberry Ice-cream</figcaption>
+			<p><i>Fresh handpicked strawberries from local farms turned into a cold, sweet treat. ($5)</i><p>
+			</div>
+		
+			<div class="image-with-text">
+			<img
+			  src="https://png.pngtree.com/png-clipart/20240316/original/pngtree-cute-chocolate-doughnut-in-pixel-art-png-image_14605645.png"
+			  alt="doughnut"
+			/>
+			<figcaption>Dark Chocolate Glazed Donut</figcaption>
+			<p><i>Rich dark chocolate drizzled over fresh fluffy dough. ($5)</i><p>
+			</div>
+		
+			<div class="image-with-text">
+			<img 
+			  src="https://thumbs.dreamstime.com/b/vanilla-pudding-dessert-sweet-caramel-sauce-plate-pixel-art-retro-vintage-video-game-bit-vector-illustration-311509821.jpg"
+			  alt="custard" 
+			/>
+			<figcaption>Japanese Chocolate Pudding</figcaption>
+			<p><i>Jiggly Japanese pudding with milk chocolate drizzled on top. ($15)</i><p>
+			</div>
+		</div>
+        </article>
+		
+      </section>
+	  
+	  
+
+      <section>
+	    <div class="containerdivNewLine">
+        <h2 id="order-form">Place Your Order</h2>
+        <article>
+        <h3>🌸Order Form🌸</h3>
+		
+			<div class="order-form">
+			<form>
+				<br>
+				
+				<i><b>Your Details:</b></i>
+				<div style="margin: 0 0 0 50px; text-align: left;">
+				<br>
+				*First Name: <input type="text" required><br>
+				Last Name: <input type="text"><br>
+				*Phone: <input type="text" required><br>
+				<br>
+				</div>
+				
+				<i><b>Quantity of items (between 0 to 5) you would like to order:</b></i>
+				<br><br>
+				<div class="left-aligned-form-section">
+				<ul>
+					<li>🌸Funky Fries					<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li>🌸Spring Rolls					<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li>🌸Chicken Drumsticks			<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li>🌸Combination Hot Pot			<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li>🌸Shoyu Chasiu Ramen			<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li>🌸Chicken Noodle Soup			<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li>🌸Strawberry Ice-cream			<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li>🌸Dark Chocolate Glazed Donut	<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+					<li>🌸Japanese Chocolate Pudding	<input type="number" value="0" min="0" max="5" name="quantity"></li><br>
+				</ul>
+				</div>
+				<br> 
+				<i><b>Add-ons:</b></i>
+				<div class="left-aligned-form-section">
+					<br>
+					<ul>
+					<input type="checkbox" name="add-on-checkbox"><li>Napkins ($1)</li><br>
+					<input type="checkbox" name="add-on-checkbox"><li>Cutlery ($1)</li><br>
+					<input type="checkbox" name="add-on-checkbox"><li>Limited-edition Tote bag ($5) </li><br>
+					<br>
+				</ul>
+				</div>
+				
+				<i><b>Special Requests:</b></i>
+				<br>
+				<div class="left-aligned-form-section">
+				<textarea id="comments"  placeholder="Enter your special requests here..."></textarea>
+				</div>
+				
+				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><input type="Submit"></a>
+			</form>
+			</article>
+			</div>
+		</div>
+		
+        
+        </main>
+      </section>
+	    <div class="containerdivNewLine">
+			<footer class="site-footer">  
+				<p><b>Copyright © 2025 BTZ Cafe</b></p>
+				<ul>
+					<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">About</a></li>
+				</ul>
+			</footer>
+		</div>
+  </body>
+  
+</html>
